@@ -21,7 +21,7 @@ public class SystemViewController : MonoBehaviour
         planets = new List<GameObject>();
         for (var i = 0; i < 5; i++)
         {
-            float radius = i + 2f;
+            float radius = i + 3f;
             float angle = i * Mathf.PI * 2 / 5;
             Vector3 pos = new Vector3(Mathf.Cos(angle), 0, 0) * radius;
             planets.Add((GameObject)Instantiate(PlanetPrefab, pos, PlanetPrefab.transform.rotation));
